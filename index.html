@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="diem" type="text">
+<button onclick="uplove()">check</button>
+<h1 id="ketQua"></h1>
+<script>
+    function uplove() {
+        let a = +document.getElementById("diem").value;
+
+        console.log(a)
+        if (a < 50) {
+            document.getElementById("ketQua").innerHTML = "Yeu"
+        } else {
+            if (a < 65) {
+                document.getElementById("ketQua").innerHTML = "KHA"
+            } else {
+                if (a < 85) {
+                    document.getElementById("ketQua").innerHTML = "GIOI"
+                } else {
+                    if (a < 100) {
+                        document.getElementById("ketQua").innerHTML = "XX"
+                    } else {
+                        document.getElementById("ketQua").innerHTML = "Sai"
+                    }
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
